@@ -3,6 +3,7 @@ alert('Answer "yes" or "no" without quotes for the first 5 questions');
 var noAnswer = 'Better luck next time.';
 var score = 0;
 
+//Question 1
 var ballroomDancer = prompt('1. Do you believe I am a high class ballroom dancer?').toLowerCase();
 if(ballroomDancer ==='no') {
   alert('You caught me! I have tried it though, and its more fun than I expected');
@@ -14,6 +15,7 @@ if(ballroomDancer ==='no') {
 }
 console.log('correct answer is no, user answered ' + ballroomDancer);
 
+//Question 2
 var petOwner = prompt('2. Do I have 2 pets?').toLowerCase();
 if(petOwner ==='yes') {
   alert('Bingo bongo! Two kitties! Kali and Jasper');
@@ -25,6 +27,7 @@ if(petOwner ==='yes') {
 }
 console.log('correct answer is yes, user answered ' + petOwner);
 
+//Question 3
 var tattoo = prompt('3. Do you believe I have any tattoos?').toLowerCase();
 if(tattoo ==='yes') {
   alert('Yes! But just the one.');
@@ -36,6 +39,7 @@ if(tattoo ==='yes') {
 }
 console.log('correct answer is yes, user answered ' + tattoo);
 
+//Question 4
 var myAge = prompt('4. Do you think I am over 30?').toLowerCase();
 if(myAge ==='no') {
   alert('You got it! I\'m just 2 years shy');
@@ -47,6 +51,7 @@ if(myAge ==='no') {
 }
 console.log('correct answer is no, user answered ' + myAge);
 
+//Question 5
 var siblings = prompt('5. Do I have any younger siblings?').toLowerCase();
 if(siblings ==='no') {
   alert('You got it! I\'m the baby in the family');
@@ -58,6 +63,7 @@ if(siblings ==='no') {
 }
 console.log('correct answer is no, user answered ' + siblings);
 
+//Question 6
 var counterToppingsNum = 0;
 var answerToppingsNum = 4;
 while (counterToppingsNum < 4) {
@@ -76,14 +82,16 @@ while (counterToppingsNum < 4) {
   console.log(counterToppingsNum + ' guess is wrong');
 }
 
+//Question 7
 var counterToppings = 0;
 var correct = false;
-var myPizzaToppings= ['pepperoni', 'jalapenos', 'anchovies', 'olives','garlic', 'cheese'];
+var myPizzaToppings = ['pepperoni', 'jalapenos', 'anchovies', 'olives','garlic', 'cheese'];
 
 while( counterToppings < 6 && correct===false) {
-  var theirPizzaGuess = (prompt('7. Can you guess one of my favorite pizza topping?').toLowerCase());
+  var theirPizzaGuess = prompt('7. Can you guess one of my favorite pizza topping?').toLowerCase();
 
   for (var i = 0; i < myPizzaToppings.length; i++) {
+    //if (myPizzaToppings.includes(theirPizzaGuess)), does not need for loop
     if (myPizzaToppings[i] === theirPizzaGuess) {
       console.log(i);
       alert('you got it');
@@ -98,7 +106,7 @@ while( counterToppings < 6 && correct===false) {
   }
   counterToppings++;
 }
-if ( correct === false ) { 
+if ( correct === false ) {
   alert('None??!?');
 }
 
