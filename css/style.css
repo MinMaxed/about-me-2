@@ -1,7 +1,20 @@
 body {
-  background-color: blueviolet;
+  background-color: rgb(43, 214, 226);
 
 }
-h1, h2 {
-  color: yellow;
+h1 {
+  color: rgb(255, 0, 0);
+  margin-left:100px;
+}
+h2{ 
+  color:rgb(255, 17, 0);
+}
+ol {
+  color: purple;
+  list-style: decimal;
+  margin-left: 20px;
+}
+ul {
+  list-style: circle;
+  margin-left: 20px;
 }

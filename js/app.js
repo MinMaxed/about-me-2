@@ -1,5 +1,5 @@
 'use strict';
-alert('answer "yes" or "no" without quotes for the first 5 questions');
+alert('Answer "yes" or "no" without quotes for the first 5 questions');
 var noAnswer = 'Better luck next time.';
 var score = 0;
 
