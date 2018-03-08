@@ -27,7 +27,7 @@ console.log('correct answer is yes, user answered ' + petOwner);
 
 var tattoo = prompt('Do you believe I have any tattoos?').toLowerCase();
 if(tattoo ==='yes') {
-  alert('Sadly just the one. But so many ideas!');
+  alert('Yes! But just the one.');
   score++;
 } else if(tattoo === 'no'){
   alert('It\'s well hidden and easy to miss');
