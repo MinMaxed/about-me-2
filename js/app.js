@@ -1,15 +1,8 @@
 'use strict';
-
-// if(some condition is met) {
-//  do this
-// } else {
-//   do something different
-// }
-
-
 alert('answer "yes" or "no" without quotes for each question');
 var noAnswer = 'Better luck next time.';
 var score = 0;
+
 var ballroomDancer = prompt('Do you believe I am a high class ballroom dancer?').toLowerCase();
 if(ballroomDancer ==='no') {
   alert('You caught me! I have tried it though, and its more fun than I expected');
@@ -83,19 +76,30 @@ while (counterToppingsNum < 4) {
   console.log(counterToppingsNum + ' guess is wrong');
 }
 
-// var myPizzaToppings= ['pepperoni', 'jalapenos', 'anchovies', 'olives','garlic'];
+var counterToppings = 0;
+var correct = false;
+var myPizzaToppings= ['pepperoni', 'jalapenos', 'anchovies', 'olives','garlic', 'cheese'];
 
-// var pizzaToppingGuess = prompt('Can you guess one of my favorite pizza topping?').toLowerCase();
-
-// for (var i = 0; i < myPizzaToppings.length; i++) {
-//   console.log(i);
-//   if(pizzaToppingGuess === myPizzaToppings[i]) {
-//     console.log('correct');
-//     break;
-//   } else {
-//     prompt(pizzaToppingGuess);
-//     console.log('nope');
-//   }
-// }
+while( counterToppings < 6 && correct===false) {
+  var theirPizzaGuess = (prompt('Can you guess one of my favorite pizza topping?').toLowerCase());
+  
+  for (var i = 0; i < myPizzaToppings.length; i++) {
+    if (myPizzaToppings[i] === theirPizzaGuess) {
+      console.log(i);
+      alert('you got it');
+      score++;
+      console.log(counterToppings + ' tries to answer');
+      correct=true;
+      break;
+    }
+    else {
+      console.log(counterToppings + ' guess is wrong');
+    }
+  }
+  counterToppings++;
+}
+if ( correct === false ) { 
+  alert('None??!?');
+}
 
 alert(score + ' out of 7');
