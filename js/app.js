@@ -2,14 +2,23 @@
 alert('Answer "yes" or "no" without quotes for the first 5 questions');
 var noAnswer = 'Better luck next time.';
 var score = 0;
+// var yesOrNoQuestions = [question1(), question2(), question3(), question4(), question5()];
 
-question1();
-question2();
-question3();
-question4();
-question5();
-question6();
-question7();
+// for (var i = 0; i <= yesOrNoQuestions.length; i++) {
+
+//   }
+function callQuestions() {
+  question1();
+  question2();
+  question3();
+  question4();
+  question5();
+  question6();
+  question7();
+}
+
+callQuestions();
+
 
 //Question 1
 function question1(){
@@ -82,7 +91,7 @@ function question5(){
   console.log('correct answer is no, user answered ' + siblings);
 }
 
-// //Question 6
+// //Question 6, guessing the specific answer, responses for all other outcomes
 function question6(){
   var counterToppingsNum = 0;
   var answerToppingsNum = 4;
@@ -103,7 +112,7 @@ function question6(){
   }
 }
 
-// //Question 7
+// //Question 7, looping through an array of possible answers
 function question7(){
   var counterToppings = 0;
   var correct = false;

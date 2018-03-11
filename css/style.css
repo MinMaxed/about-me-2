@@ -13,8 +13,13 @@ ol {
   color: purple;
   list-style: decimal;
   margin-left: 20px;
+  padding: 4px;
 }
 ul {
   list-style: circle;
   margin-left: 20px;
+  padding: 4px;
+}
+li {
+  padding: 3x;
 }
